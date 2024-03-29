@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Bootstrtap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Boxicon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <!-- form -->
+            <div class="col-md text-center">
+                <div class="row">
+                    <div class="p-4">
+                        <img class="pb-3" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAABVFJREFUaEPtmmmolkUUx3+GUdaHVizTqKxoT6GCCISoLEWlxWyjgojKIDGySD+UbUSpLRTYgoottEjSgtK+fCgqTEJKi6xoMW1R2xdaqPnHvPF67/O8c2Z5XiXvgZf74c5Z/jPzzPzPmdOPzUz6bWZ46QP8f1/xvhUuvMLbAmOAI4AhwCBgN/+Tq9Vtv1XAm8DTwC+F4/jPXBMrvB0wHjgZGJsY+FPAY8DjwE+JNirVSgLeB7gSOAfYqlCQWul5wM2AdkC2lAC8PXATcAGwRXZE1Qb+BG4Frs3d7rmATwAeBHZuCGhPs58DE/y3nuQyB/B05/GaJK/5ShcDd6eYSQEsnXv8Fk7xWUrnCmBWrLEUwHOA82MdNTR+mj8/zOZjAd8OTDZb787AqO0dA/hS4LbuYIj2Mg5YZNGyAh7uGNMSoL/F6EYY8y1wIPBlyLcV8IfA3iFjG/n/LwHHhmKwABapEIMqId842vkO8J43plXR7tmhhHHP8sQLaiUE+ABgRYFgPnFJwoXA8zW2TgRmtyUVqS7XAkOBH+sMhAA/ASiYHFkKiJGtCxgZDLwI7JfjzNPPWkLUCfDBfvvl+F8JHAmsNxoR6Lcci9rVOL5qmFZ3IPBb1T87Ab4R0MWeI6Md4GciDYjUiNzkyKnAwljAHwN7ZXj9FNgzUf9Xx6C2TtSV2gJ3MJ4eA1in5/IMh1JVHptKQXW4HZfh/wdHklSI6CV1W3pKCjHvYV3XWeoncYc75CZlAJbqCDdpr/a0UQdY5RWVaXLkFleeuTzRgHQvS9Rtqcm37GwgdYDfBQ7KdFj7HRnslphwpbATrYBzDw35EavS9ZAiurN3TFFs03kZOMYK+K9C9amTgCcjAz/DkY+HI3Wqhn9QRWLqtvTfBRzKxEcubTsc+M5obxefle1uHN9pWOVJ3TRgBSTmNMpALcWuXihwdrQmQUxrgHVL6/srWYnUSl/kuXLVqogkqAyrV4lS8jWgHWM6pZvKf78CdAMoRdzSr6bSQ9W2S8v7gLI9E+BngeNLR9Bleyr5qPRjAnwncEmXAyztTiVclXJNgM92JZ0HSkfQZXuVGVPdKa0DSwdXKdF3q7KO8uM/ehjVt7yv/96Ug5cSJQ+6mkwrrEGv++Q9NQBRSxEIVU1iRBxeO0ykJVWe81WWXvqdCgDioXcleHzD1cFOc6mhHr5yRLm0OPVhCUbOqmNrnQDrqvgC2CbC4Q3AVRHjLUN1+ChdtYp4eC2HCBXx9NKgFweLNAG25TcmXbwauL4u4BBg9WSoDyMkjwBnhgZl/t+SMuqQ2qMTdw8BVoyaMb28dxJVFtTP8X0mqDp1FepFJI4K2A8+rFkAy4eulP0DznTliJ2p6F5S1Duizh79DU26yjodxQr4UNeVsyxkzGdEepaZaxhrGaKbQuXi0FOMOn1UofksZNQKWHZENUU5LfK2L8K9ZhlcMeZoV/FQIe8Qo/4pvsUpODwGsIzFPojrTr4feMjwfaukI8KhticVDawS/G7bDcUClm5qy8Mrfsvr2UV3pVqcBFLbVbWv4PdXMQONtzzIpyZpPnCudQkaGte1ppZW/Nc1wKqsc6MmuKT3p5Qt3R6U7t77CpRUrUB15Snt0xNskuQCltOdHN+eAZznt3tSIAGl34GZrsdE9LXyGdTqtATgli89wE0FVFdWjltC9NZ7ry/wWShu0GdJwC1nOnnVOqxK5MhgBL0H/Oz6qxe7gsCj/m25aO90E4DbIajqIPDDAL3uKxnRTzVoFfuVfuq3xufPIiqmfquEifxXpWnAqXE1ptcHuLGp3UQM963wJrIQjYXxD5ZSzj31cAa3AAAAAElFTkSuQmCC"/>
+                        <h3>Iniciar Sesión</h3>
+                    </div>
+                    <div class="row p-4">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-8">
+                            <form action="" method="post">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="bi bi-envelope"></i>
+                                    </span>
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Correo Electrónico</label>
+                                    </div>
+                                </div>
+
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="bi bi-lock"></i>
+                                    </span>
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" id="floatingInput" placeholder="********">
+                                        <label for="floatingInput">Contraseña</label>
+                                    </div>
+                                </div>
+
+                                
+                                <button type="submit" class="btn btn-outline-primary">Iniciar Sesión</button>
+                            </form>
+                        </div>
+                        <div class="col-sm-2"></div>
+                    </div>
+                    <div class="p-4">
+                        <div class="p-3">
+                            <label>¿No tiene una cuenta? <a href="#">Regístrese</a></label>
+                        </div>
+                        <div class="p-3">
+                            <a href="#"><label for="">¿Olvidó su contraseña?</label></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- picture -->
+            <div class="col-md">
+                <img src="/img/Oscuro.png" alt="" srcset="" class="img-fluid w-100">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
